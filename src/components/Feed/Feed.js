@@ -7,7 +7,7 @@ import FlipMove from 'react-flip-move'
 import Post from '../Post/Post'
 import 'firebase/compat/app'
 import { collection, getDocs, addDoc, serverTimestamp, query, orderBy } from 'firebase/firestore'
-import { db } from '../../config/firebase'
+import { db } from '../../features/firebase'
 import { useSelector } from 'react-redux'
 import { selectUser } from '../../redux/userSlice'
 

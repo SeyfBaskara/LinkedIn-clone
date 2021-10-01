@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Header.css'
 import HeaderOption from './HeaderOption'
 
@@ -11,7 +12,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { logout, selectUser } from '../../redux/userSlice'
 import 'firebase/app'
 import { signOut } from 'firebase/auth'
-import { auth } from '../../config/firebase'
+import { auth } from '../../features/firebase'
 
 const Header = () => {
    const user = useSelector(selectUser)
@@ -40,11 +41,22 @@ const Header = () => {
          </div>
 
          <div className="header__right ">
-            <HeaderOption Icon={Home} title="Home" />
-            <HeaderOption Icon={SupervisorAccount} title="My Network" />
-            <HeaderOption Icon={BusinessCenter} title="Jobs" />
-            <HeaderOption Icon={ChatIcon} title="Messaging" />
-            <HeaderOption Icon={NotificationsIcon} title="Notifications" />
+            <Link to="/">
+               <HeaderOption Icon={Home} title="Home" />
+            </Link>
+            <Link to="/mynetwork">
+               <HeaderOption Icon={SupervisorAccount} title="My Network" />
+            </Link>
+            <Link to="/jobs">
+               <HeaderOption Icon={BusinessCenter} title="Jobs" />
+            </Link>
+            <Link to="/messaging">
+               <HeaderOption Icon={ChatIcon} title="Messaging" />
+            </Link>
+            <Link to="/notifications">
+               <HeaderOption Icon={NotificationsIcon} title="Notifications" />
+            </Link>
+
             <HeaderOption
                avatar={user?.photoURL}
                defaultAvatar={user?.email[0]}

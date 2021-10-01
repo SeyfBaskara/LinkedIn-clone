@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux'
 
 import 'firebase/app'
 import { createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword } from 'firebase/auth'
-import { auth } from '../../config/firebase'
+import { auth } from '../../features/firebase'
 
 import { login } from '../../redux/userSlice'
 
