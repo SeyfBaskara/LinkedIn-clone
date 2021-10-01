@@ -5,7 +5,7 @@ import HeaderOption from './HeaderOption'
 import SearchIcon from '@material-ui/icons/Search'
 import ChatIcon from '@material-ui/icons/Chat'
 import NotificationsIcon from '@material-ui/icons/Notifications'
-import { Home, SupervisorAccount, BusinessCenter } from '@material-ui/icons/'
+import { Home, SupervisorAccount, BusinessCenter, ViewModule, ArrowDropDown } from '@material-ui/icons/'
 
 import { useDispatch, useSelector } from 'react-redux'
 import { logout, selectUser } from '../../redux/userSlice'
@@ -50,7 +50,9 @@ const Header = () => {
                defaultAvatar={user?.email[0]}
                title="me"
                onClick={logoutOffApp}
+               IconArrow={ArrowDropDown}
             />
+            <HeaderOption Icon={ViewModule} IconArrow={ArrowDropDown} title="Work" />
          </div>
       </div>
    )

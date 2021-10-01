@@ -1,12 +1,16 @@
 .widgets {
    position: sticky;
-   top: 80px;
+   top: 70px;
    flex: 0.3;
+   height: fit-content;
+   padding-bottom: 10px;
+}
+
+.widgets__stats {
    background-color: white;
    border: 1px solid lightgray;
    border-radius: 10px;
-   height: fit-content;
-   padding-bottom: 10px;
+   margin-bottom: 10px;
 }
 
 .widgets__header {
@@ -16,12 +20,15 @@
    padding: 10px;
 }
 .widgets__header > h2 {
-   font-size: 16px;
-   font-weight: 400;
+   font-size: 18px;
+   font-weight: 600;
+}
+.widgets__header > .MuiSvgIcon-root:hover {
+   cursor: pointer;
 }
 .widgets__article {
    display: flex;
-   padding: 10px;
+   padding: 8px;
    cursor: pointer;
 }
 .widgets__article:hover {
@@ -39,12 +46,56 @@
 
 .widgets__articleRight {
    display: flex;
+   align-items: center;
 }
 
 .widgets__articleRight > h4 {
    font-size: 14px;
+   font-weight: 600;
 }
 .widgets__articleRight > p {
    font-size: 12px;
    color: gray;
+   padding-left: 10px;
+}
+
+.widgets__stat {
+   display: flex;
+   flex-direction: column;
+   padding: 5px 10px;
+}
+.widgets__stat:hover {
+   background-color: whitesmoke;
+   cursor: pointer;
+}
+
+.widgets__stat > h4 {
+   font-size: 14px;
+   font-weight: 600;
+   margin-bottom: 5px;
+}
+
+.widgets__stat > p {
+   font-size: 13px;
+   font-weight: 500;
+   color: gray;
+}
+
+.widgets__stat__bottom {
+   display: flex;
+   align-items: center;
+   padding: 10px;
+}
+.widgets__stat__bottom:hover {
+   cursor: pointer;
+}
+.widgets__stat__bottom > h2 {
+   font-size: 16px;
+   font-weight: 600;
+   color: rgb(83, 82, 82);
+   padding-right: 5px;
+}
+.widgets__stat__bottom > .MuiSvgIcon-root {
+   font-size: 20px;
+   color: rgb(83, 82, 82);
 }

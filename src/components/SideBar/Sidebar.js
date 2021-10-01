@@ -4,6 +4,8 @@ import './Sidebar.css'
 import { Avatar } from '@material-ui/core'
 import { useSelector } from 'react-redux'
 import { selectUser } from '../../redux/userSlice'
+import BookmarkIcon from '@material-ui/icons/Bookmark'
+import AddIcon from '@material-ui/icons/Add'
 
 const Sidebar = () => {
    const user = useSelector(selectUser)
@@ -19,7 +21,7 @@ const Sidebar = () => {
       <div className="sidebar">
          <div className="sidebar__top">
             <img
-               src="https://images.unsplash.com/flagged/photo-1570735821643-6d4126137675?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mzl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+               src="https://images.unsplash.com/photo-1557683304-673a23048d34?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=282&q=80"
                alt="background-img"
             />
             <Avatar src={user?.photoURL} className="sidebar__avatar">
@@ -35,8 +37,28 @@ const Sidebar = () => {
                <p className="sidebar__statNumber">35</p>
             </div>
             <div className="sidebar__stat">
-               <p>who viewed you</p>
+               <p>who viewed your profile</p>
                <p className="sidebar__statNumber">10</p>
+            </div>
+            <div className="sidebar__statItem">
+               <BookmarkIcon />
+               <h4>My items</h4>
+            </div>
+         </div>
+
+         <div className="sidebar__stats_2">
+            <div className="sidebar__stat_2">
+               <a href="groups">Groups</a>
+            </div>
+            <div className="sidebar__stat_2">
+               <a href="events">Events</a>
+               <AddIcon />
+            </div>
+            <div className="sidebar__stat_2">
+               <a href="follow"> Follow hastags</a>
+            </div>
+            <div className="sidebar__stat_2_discover">
+               <p>Discover more</p>
             </div>
          </div>
 

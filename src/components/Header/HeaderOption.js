@@ -3,7 +3,7 @@ import './HeaderOption.css'
 
 import { Avatar } from '@material-ui/core'
 
-const HeaderOption = ({ avatar, defaultAvatar, Icon, title, onClick }) => {
+const HeaderOption = ({ avatar, defaultAvatar, Icon, title, onClick, IconArrow }) => {
    return (
       <div className="headerOption" onClick={onClick}>
          {Icon && <Icon className="headerOption__icon" />}
@@ -12,9 +12,18 @@ const HeaderOption = ({ avatar, defaultAvatar, Icon, title, onClick }) => {
                {defaultAvatar}
             </Avatar>
          )}
-         <h3 className="headerOption__title">{title}</h3>
+         {IconArrow ? (
+            <div className="headerOption__icon__arrow">
+               <h3 className="headerOption__title">{title}</h3>
+               <IconArrow />
+            </div>
+         ) : (
+            <h3 className="headerOption__title">{title}</h3>
+         )}
       </div>
    )
 }
 
 export default HeaderOption
+
+//NOTE IconArrow fontsize must be fixed

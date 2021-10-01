@@ -20,3 +20,8 @@
    height: 25px !important;
    width: 25px !important;
 }
+
+.headerOption__icon__arrow {
+   display: flex;
+   align-items: center;
+}
