@@ -149,8 +149,15 @@
 .sidebar__stat_2 > a:hover {
    text-decoration: underline;
 }
+.sidebar__stat_2 > .MuiSvgIcon-root {
+   font-size: 20px;
+   font-weight: 400;
+   padding: 5px;
+}
 .sidebar__stat_2 > .MuiSvgIcon-root:hover {
    cursor: pointer;
+   background-color: whitesmoke;
+   border-radius: 50%;
 }
 .sidebar__stat_2_discover > p {
    padding: 10px 0 5px;

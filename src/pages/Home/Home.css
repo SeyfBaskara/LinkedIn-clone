@@ -1,11 +1,11 @@
-.home {
+/* .home {
    background-color: #f3f2ef;
    display: flex;
    flex-direction: column;
    align-items: center;
-}
+} */
 
-.home__app {
+.home {
    display: flex;
    margin-top: 5px;
    max-width: 1200px;
