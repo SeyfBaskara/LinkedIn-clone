@@ -1,0 +1,197 @@
+.messagingFeed {
+   position: sticky;
+   top: 70px;
+   flex: 0.5;
+   border-top: 0.1px solid rgb(233, 232, 232);
+   border-right: 0.1px solid rgb(233, 232, 232);
+   border-bottom: 0.1px solid rgb(233, 232, 232);
+   margin-right: 10px;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   background-color: white;
+   height: fit-content;
+}
+
+/******************** HEADER *****************/
+.messagingFeed__header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 0.2px solid #f3f2ef;
+   padding-left: 10px;
+}
+
+.messagingFeed__headerInfo > h4 {
+   font-size: 14px;
+   font-weight: 700;
+   color: rgba(0, 0, 0, 0.8);
+}
+
+.messagingFeed__headerInfo > h4:hover {
+   cursor: pointer;
+   text-decoration: underline;
+   color: rgb(56, 136, 241);
+}
+
+.messagingFeed__headerInfo > p {
+   font-size: 13px;
+   font-weight: 400;
+   color: gray;
+}
+
+.messagingFeed__headerIcons > .MuiSvgIcon-root {
+   color: gray;
+   padding: 10px;
+}
+.messagingFeed__headerIcons > .MuiSvgIcon-root:hover {
+   cursor: pointer;
+   background-color: #f3f2ef;
+   border-radius: 50%;
+}
+
+/******************** PROFILE *****************/
+.messagingFeed__inbox {
+   height: 375px;
+   overflow: auto;
+}
+
+.messagingFeed__inboxProfile {
+   padding: 10px;
+   border-bottom: 0.2px solid #f3f2ef;
+}
+
+.messagingFeed__inboxProfile > .MuiAvatar-root {
+   height: 70px;
+   width: 70px;
+   margin-bottom: 10px;
+}
+
+.messagingFeed__inboxProfile-info > h4 {
+   font-size: 17px;
+   font-weight: 600;
+}
+.messagingFeed__inboxProfile-info > h4:hover {
+   cursor: pointer;
+   text-decoration: underline;
+}
+.messagingFeed__inboxProfile-info > p {
+   font-size: 14px;
+   font-weight: 400;
+}
+
+/******************** INBOXMSG *****************/
+
+.messagingFeed__inboxMsg-profile {
+   display: flex;
+   padding: 10px 10px 0;
+}
+
+.messagingFeed__inboxMsg-info {
+   display: flex;
+   padding-left: 10px;
+}
+
+.messagingFeed__inboxMsg-info > h4 {
+   font-size: 14px;
+   font-weight: 700;
+   color: rgba(0, 0, 0, 0.8);
+   padding-right: 10px;
+}
+
+.messagingFeed__inboxMsg-info > p {
+   font-size: 13px;
+   font: 400;
+   color: gray;
+}
+
+.messagingFeed__inboxMsg-text {
+   height: fit-content;
+   padding: 5px 0 20px;
+   margin-top: -15px;
+   font-size: 15px;
+}
+.messagingFeed__inboxMsg-text:hover {
+   cursor: text;
+   background-color: #f3f2ef;
+}
+.messagingFeed__inboxMsg-text > p {
+   padding: 0 20px 0 60px;
+}
+
+/******************** INPUT *****************/
+
+.messagingFeed__input {
+   display: flex;
+   justify-content: space-between;
+   border-top: 0.2px solid #f3f2ef;
+}
+
+.messagingFeed__input > input {
+   outline: none;
+   border: none;
+   background: none;
+   width: 100%;
+   padding: 15px 10px 10px;
+   padding-bottom: 60px;
+}
+
+.messagingFeed__input > .MuiSvgIcon-root {
+   font-size: 35px;
+   padding: 5px;
+   color: gray;
+}
+
+.messagingFeed__input > .MuiSvgIcon-root:hover {
+   cursor: pointer;
+   background-color: #f3f2ef;
+   border-radius: 50%;
+}
+
+/******************** BOTTOM *****************/
+
+.messagingFeed__bottom {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5px 5px 50px;
+   border-top: 0.2px solid #f3f2ef;
+   background-color: #f9fafb;
+}
+
+.messagingFeed__bottom__leftIcon {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 40%;
+}
+
+.messagingFeed__bottom__rightIcon {
+   display: flex;
+   align-items: center;
+   padding-left: 10px;
+}
+
+.messagingFeed__bottom__rightIcon > button {
+   font-size: 15px;
+   font-weight: 600;
+   color: gray;
+   border: none;
+   background: none;
+   border-radius: 10px;
+}
+
+.messagingFeed__bottom__rightIcon > button:hover {
+   cursor: pointer;
+}
+
+.messagingFeed__bottom__leftIcon > .MuiSvgIcon-root,
+.messagingFeed__bottom__rightIcon > .MuiSvgIcon-root {
+   padding: 10px;
+   color: gray;
+}
+.messagingFeed__bottom__leftIcon > .MuiSvgIcon-root:hover,
+.messagingFeed__bottom__rightIcon > .MuiSvgIcon-root:hover {
+   cursor: pointer;
+   background-color: #f3f2ef;
+   border-radius: 50%;
+}

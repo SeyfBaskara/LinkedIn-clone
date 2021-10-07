@@ -1,0 +1,7 @@
+.messagingWidgets {
+   position: sticky;
+   top: 70px;
+   flex: 0.3;
+   height: fit-content;
+   padding-bottom: 10px;
+}

@@ -1,0 +1,140 @@
+.messagingSidebar {
+   position: sticky;
+   top: 70px;
+   flex: 0.3;
+   border: 0.1px solid rgb(233, 232, 232);
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   max-height: 100%;
+   background-color: white;
+}
+
+/***************** HEADER *******************/
+
+.messagingSidebar__header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 10px;
+   border-bottom: 0.2px solid #f3f2ef;
+}
+
+.messagingSidebar__header > h2 {
+   font-size: 20px;
+   font-weight: 600;
+}
+
+.messagingSidebar__headerIcon > .MuiSvgIcon-root {
+   padding: 10px;
+   color: gray;
+}
+
+.messagingSidebar__headerIcon > .MuiSvgIcon-root:hover {
+   cursor: pointer;
+   background-color: #f3f2ef;
+   border-radius: 50%;
+}
+
+/***************** SEARCH *******************/
+
+.messagingSidebar__search {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 12px 8px;
+   border: 2px solid white;
+   border-radius: 5px;
+   height: 10px;
+   color: gray;
+   background-color: #eef3f8;
+   margin: 8px;
+}
+
+.messagingSidebar__searchIcon {
+   display: flex;
+   align-items: center;
+}
+
+.messagingSidebar__searchIcon > input {
+   outline: none;
+   border: none;
+   background: none;
+}
+.messagingSidebar__search:hover {
+   border: 2px solid gray;
+   cursor: text;
+}
+
+.messagingSidebar__search > .MuiSvgIcon-root {
+   padding: 5px;
+}
+
+.messagingSidebar__search > .MuiSvgIcon-root:hover {
+   cursor: pointer;
+   background-color: lightgray;
+   border-radius: 50%;
+}
+
+/***************** INBOX *******************/
+
+.messagingSidebar__inboxs {
+   display: flex;
+   align-items: center;
+   padding: 10px;
+   border-bottom: 0.2px solid #f3f2ef;
+}
+
+.messagingSidebar__inboxs:hover {
+   cursor: pointer;
+   background-color: #f3f2ef;
+}
+
+.messagingSidebar__inboxs > .MuiAvatar-root {
+   height: 60px;
+   width: 60px;
+}
+
+.messagingSidebar__inbox {
+   display: flex;
+   flex-direction: column;
+   padding-left: 10px;
+   width: 100%;
+}
+
+.messagingSidebar__inbox > p {
+   font-size: 12px;
+   font-weight: 400;
+   color: gray;
+   padding-right: 30px;
+}
+
+.messagingSidebar__inbox__stats {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.messagingSidebar__inbox__stats > h4 {
+   font-size: 18px;
+   font-weight: 300;
+}
+.messagingSidebar__inbox__stats > p {
+   font-size: 15px;
+   font-weight: 300;
+}
+
+/***************** BOTTOM *******************/
+.messagingSidebar__bottom {
+   display: flex;
+   justify-content: center;
+   padding: 10px 0;
+}
+.messagingSidebar__bottom > h4 {
+   color: gray;
+   padding: 7px;
+   border-radius: 5px;
+}
+
+.messagingSidebar__bottom > h4:hover {
+   cursor: pointer;
+   background-color: #f3f2ef;
+}
