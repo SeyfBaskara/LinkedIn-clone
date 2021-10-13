@@ -1,0 +1,48 @@
+:root {
+   --background-color: white;
+   --linkin-font-color: #0a66c2;
+   --gray-color: gray;
+   --border-color: rgb(233, 232, 232);
+}
+.jobsWidgets {
+   flex: 0.3;
+}
+.jobsWidgets__top {
+   display: flex;
+   flex-direction: column;
+   background-color: var(--background-color);
+   border-radius: 10px;
+   padding: 15px 10px;
+}
+.jobsWidgets__top > h2 {
+   font-size: 18px;
+   font-weight: 600;
+}
+.top__elem {
+   display: flex;
+   margin-top: 10px;
+   padding: 10px 15px;
+   border: 1px solid var(--border-color);
+   border-radius: 10px;
+   box-shadow: var(--gray-color);
+}
+.top__elem > .MuiSvgIcon-root {
+   font-size: 70px;
+   height: 100px;
+   color: rgba(250, 175, 90, 0.911);
+}
+.top__elem__stat {
+   padding-left: 10px;
+}
+.top__elem__stat > h4 {
+   color: var(--linkin-font-color);
+   font-size: 16px;
+   font-weight: 600;
+   margin-top: 5px;
+   margin-bottom: 15px;
+}
+.top__elem__stat > p {
+   color: var(--gray-color);
+   font-size: 13px;
+   font-weight: 600;
+}

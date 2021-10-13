@@ -1,0 +1,49 @@
+:root {
+   --background-color: white;
+   --linkin-font-color: #0a66c2;
+}
+
+.jobsSidebar {
+   position: sticky;
+   top: 70px;
+   flex: 0.2;
+   text-align: center;
+   height: fit-content;
+}
+.jobsSidebar__top,
+.jobsSidebar__bottom {
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   border-radius: 10px;
+   background-color: var(--background-color);
+   margin-bottom: 10px;
+}
+.jobsSidebar__top__elem {
+   display: flex;
+   align-items: center;
+   padding: 13px 0 13px;
+}
+.jobsSidebar__top__elem:hover {
+   cursor: pointer;
+}
+.jobsSidebar__top__elem > .MuiSvgIcon-root {
+   color: gray;
+   padding-right: 10px;
+}
+.jobsSidebar__top__elem > h4 {
+   font-size: 15px;
+   font-weight: 600;
+}
+
+.jobsSidebar__bottom__elem {
+   display: flex;
+   align-items: center;
+   color: var(--linkin-font-color);
+}
+.jobsSidebar__bottom__elem:hover {
+   cursor: pointer;
+}
+.jobsSidebar__bottom__elem > h4 {
+   padding-left: 10px;
+}

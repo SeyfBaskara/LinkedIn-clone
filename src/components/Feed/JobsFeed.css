@@ -1,0 +1,98 @@
+:root {
+   --background-color: white;
+   --linkin-font-color: #0a66c2;
+   --gray-color: gray;
+   --border-color: rgb(233, 232, 232);
+}
+
+.jobsFeed {
+   flex: 0.5;
+   margin: 0 20px;
+}
+
+.jobsFeed__posts {
+   background-color: var(--background-color);
+   border-radius: 10px;
+   padding: 15px 5px 15px 15px;
+}
+
+.posts__header > h3 {
+   font-weight: 600;
+}
+
+.posts__header > p {
+   font-size: 14px;
+   color: var(--gray-color);
+}
+
+/************** JobsFeed__post ***********/
+
+.jobsFeed__post {
+   display: flex;
+   justify-content: space-between;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   border-bottom: 0.3px solid var(--border-color);
+}
+
+.post__details {
+   display: flex;
+   padding-top: 10px;
+}
+
+.post__details > .MuiAvatar-root {
+   height: 60px;
+   width: 60px;
+}
+.post__details__elem {
+   padding-left: 10px;
+}
+.post__details__elem > h4 {
+   color: var(--linkin-font-color);
+   padding-bottom: 5px;
+}
+.post__details__elem > h4:hover {
+   cursor: pointer;
+   text-decoration: underline;
+}
+.post__details__elem > p {
+   font-size: 15px;
+   color: var(--gray-color);
+}
+
+.post__details__elem-status,
+.post__details__elem-timeStatus {
+   display: flex;
+   align-items: center;
+}
+.post__details__elem-status {
+   padding: 5px 0;
+}
+.post__details__elem-status > .MuiSvgIcon-root {
+   color: rgb(2, 122, 2);
+}
+.post__details__elem-status > p {
+   padding-left: 5px;
+   color: var(--gray-color);
+   font-size: 13px;
+}
+.post__details__elem-timeStatus > p {
+   color: var(--gray-color);
+   padding-right: 10px;
+   font-size: 13px;
+}
+.post__details__elem-timeStatus > h4 {
+   color: rgb(2, 122, 2);
+   font-size: 13px;
+   font-weight: 500;
+}
+
+.jobsFeed__post > .MuiSvgIcon-root {
+   padding: 10px;
+   border-radius: 50%;
+   color: var(--gray-color);
+}
+.jobsFeed__post > .MuiSvgIcon-root:hover {
+   cursor: pointer;
+   background-color: whitesmoke;
+}
