@@ -11,6 +11,7 @@ import { auth } from './features/firebase'
 
 import Header from './components/Header/Header'
 import Login from './components/Login/Login'
+import MessagingBox from './components/MessagingBox/MessagingBox'
 
 // Pages
 import Home from './pages/Home/Home'
@@ -57,6 +58,7 @@ function App() {
                   </>
                )}
             </Switch>
+            <MessagingBox />
          </div>
       </Router>
    )

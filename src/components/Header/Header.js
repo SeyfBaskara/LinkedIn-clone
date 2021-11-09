@@ -4,7 +4,7 @@ import './Header.css'
 import HeaderOption from './HeaderOption'
 
 import SearchIcon from '@material-ui/icons/Search'
-import ChatIcon from '@material-ui/icons/Chat'
+import TelegramIcon from '@material-ui/icons/Telegram'
 import NotificationsIcon from '@material-ui/icons/Notifications'
 import { Home, SupervisorAccount, BusinessCenter, ViewModule, ArrowDropDown } from '@material-ui/icons/'
 
@@ -51,7 +51,7 @@ const Header = () => {
                <HeaderOption Icon={BusinessCenter} title="Jobs" />
             </Link>
             <Link to="/messaging">
-               <HeaderOption Icon={ChatIcon} title="Messaging" />
+               <HeaderOption Icon={TelegramIcon} title="Messaging" />
             </Link>
             <Link to="/notifications">
                <HeaderOption Icon={NotificationsIcon} title="Notifications" />

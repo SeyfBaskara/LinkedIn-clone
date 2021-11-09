@@ -30,7 +30,7 @@ const MessagingFeed = () => {
       <div className="messagingFeed">
          <div className="messagingFeed__header">
             <div className="messagingFeed__headerInfo">
-               <h4>Gaelle Tremas</h4>
+               <h4>Sherif Cool</h4>
                <p>Teacher at English School</p>
             </div>
             <div className="messagingFeed__headerIcons">
@@ -43,25 +43,25 @@ const MessagingFeed = () => {
             <div className="messagingFeed__inboxProfile">
                <Avatar />
                <div className="messagingFeed__inboxProfile-info">
-                  <h4>Gaelle Tremas</h4>
+                  <h4>Sherif Cool</h4>
                   <p>Teacher at English School</p>
                </div>
             </div>
 
             {messagingInbox(
-               'Gaelle Tremas',
+               'Sherif Cool',
                '1:26 PM',
                `Messages will come here Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                eiusmod tempor incididunt ut labore et dolore magna aliqua. `
             )}
             {messagingInbox(
-               'Seyf Baskara',
+               'Tom Mot',
                '1:26 PM',
                `Messages will come here Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                eiusmod tempor incididunt ut labore et dolore magna aliqua.`
             )}
             {messagingInbox(
-               'Gaelle Tremas',
+               'Sherif Cool',
                '1:26 PM',
                `Messages will come here Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                eiusmod tempor incididunt ut labore et dolore magna aliqua.`

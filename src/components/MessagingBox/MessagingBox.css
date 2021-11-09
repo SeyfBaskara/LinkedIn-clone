@@ -1,0 +1,105 @@
+.messagingBox {
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   background-color: white;
+   width: 300px;
+   height: 500px;
+   padding: 10px 0;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   box-shadow: 0px 0px 2px 0px gray;
+}
+
+.box__top {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+   padding: 0 10px 10px;
+   margin-bottom: 10px;
+   border-bottom: 1px solid #f3f2ef;
+}
+
+.box__top__left {
+   display: flex;
+   align-items: center;
+}
+.box__top__left > p {
+   padding-left: 10px;
+   font-size: 15px;
+   font-weight: 600;
+}
+.box__top__right {
+   display: flex;
+   align-items: center;
+}
+.box__top__right > .MuiSvgIcon-root {
+   padding-left: 10px;
+   color: gray;
+}
+.box__search {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 0 10px 5px;
+   padding: 5px;
+   color: gray;
+   border-radius: 5px;
+   background-color: #eef3f8;
+}
+.box__search__left {
+   display: flex;
+   align-items: center;
+}
+.box__search__left > input {
+   border: none;
+   outline: none;
+   background: none;
+}
+
+.messaging__inboxs {
+   display: flex;
+   padding: 10px;
+   position: relative;
+}
+.messaging__inboxs::after {
+   position: absolute;
+   content: '';
+   height: 1px;
+   width: 82%;
+   bottom: 0;
+   right: 0;
+   border-bottom: 1px solid #f3f2ef;
+}
+.messaging__inboxs > .MuiAvatar-root {
+   height: 55px;
+   width: 55px;
+}
+.messaging__inboxs:hover {
+   background-color: whitesmoke;
+}
+.messaging__inbox {
+   width: 100%;
+   padding-left: 8px;
+}
+.messaging__inbox > p {
+   font-size: 13px;
+   color: gray;
+}
+.messaging__profile {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.messaging__profile > h4 {
+   font-size: 14px;
+   font-weight: 400;
+   color: rgb(36, 35, 35);
+}
+
+.messaging__profile > p {
+   font-size: 13px;
+   color: gray;
+}

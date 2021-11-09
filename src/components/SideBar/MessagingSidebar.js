@@ -37,17 +37,9 @@ const MessagingSidebar = () => {
             </div>
             <TuneIcon />
          </div>
-         {messagingInbox(
-            'Gaelle Tremas',
-            'Sep 20',
-            'Hey whats up? its been long time that you are not showing up!'
-         )}
-         {messagingInbox('Andy Guagnini', 'May 20', 'Hey there! how are you?')}
-         {messagingInbox(
-            'Askin Yigit',
-            'Sep 20',
-            'Hey whats up? ! There is a great meet up about Software development!'
-         )}
+         {messagingInbox('Sherif Cool', 'Sep 20', 'Hey whats up? its been long time that you are not showing up!')}
+         {messagingInbox('Tom Mot', 'May 20', 'Hey there! how are you?')}
+         {messagingInbox('John River', 'Sep 20', 'Hey whats up?!')}
          <div className="messagingSidebar__bottom">
             <h4> Load more conversation</h4>
          </div>
