@@ -64,24 +64,14 @@ const Login = () => {
             alt="brand"
          />
          <form>
-            <input
-               value={name}
-               onChange={(e) => setName(e.target.value)}
-               placeholder="Full name (Requred)"
-               type="Full name"
-            />
+            <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Full name (Requred)" type="Full name" />
             <input
                value={profilePic}
                onChange={(e) => setProfilePic(e.target.value)}
                placeholder="Profile pic Url (Optional)"
                type="text"
             />
-            <input
-               value={email}
-               onChange={(e) => setEmail(e.target.value)}
-               placeholder="Email (requred)"
-               type="Email"
-            />
+            <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email (requred)" type="Email" />
             <input
                value={password}
                onChange={(e) => setPassword(e.target.value)}
@@ -93,7 +83,7 @@ const Login = () => {
             </button>
          </form>
          <p>
-            Not a member?{' '}
+            Not a member?
             <span className="login__register" onClick={handleRegister}>
                Register now
             </span>
